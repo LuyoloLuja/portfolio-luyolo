@@ -65,12 +65,19 @@ header {
     border-radius: 10px;
     display: grid;
     grid-template-columns: 50% 50%;
+    grid-template-rows: max-content;
     position: absolute;
     top: 55vh;
     left: 20%;
     right: 20%;
 }
-.main h2 { font-size: 18px; }
+.main p { 
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.3em;
+ }
+.main > article { padding: 20px; }
+.main h2 { font-size: 20px; }
 .about {
     background-color: #313036;
     color: #abaaad;
@@ -79,13 +86,23 @@ header {
     background-color: #abaaad;
     color: #313036;
 }
-.projects {
-    background-color: #abaaad;
-    color: #313036;
+.skills section > i { border: 1px solid black; }
+.skills section {
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    grid-row-gap: 50px;
 }
-.contact {
+.skills section img {
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+.projects {
     background-color: #313036;
     color: #abaaad;
+}
+.contact {
+    background-color: #abaaad;
+    color: #313036;
 }
 footer {
     position: absolute;
