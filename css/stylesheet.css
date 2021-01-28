@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+	font-family: "Montserrat","Helvetica Neue",Arial,sans-serif;
 }
 .container { 
     position: relative;
@@ -44,18 +46,20 @@ header {
     right: 20%;
 }
 .info { 
-    border: 1px solid yellow;
-    /* width: 100%; */
+    /* border: 1px solid yellow; */
+    width: 60%;
     display: flex;
     position: absolute;
     left: 20%;
     top: 9vh;
  }
 .bio {
-    /* display:flex;
+    display:flex;
     justify-content: space-around;
     align-items: center;
-} */
+    margin-left: auto;
+    padding: 10px;
+}
 
 
 
