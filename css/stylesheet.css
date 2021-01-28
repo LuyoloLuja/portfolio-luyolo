@@ -24,6 +24,7 @@ nav { height: 10vh; }
     color: black;
     text-decoration: none;
 }
+.nav-links a:hover { text-decoration: underline; }
 header {
     height: 65vh;
     background-color: #5D5C61;
@@ -34,16 +35,6 @@ header {
     left: 0%;
     right: 0%;
     top: 0%;
-}
-.main {
-    width: 60%;
-    height: 100%;
-    background-color: red;
-    border-radius: 5px;
-    position: absolute;
-    top: 55vh;
-    left: 20%;
-    right: 20%;
 }
 .info { 
     /* border: 1px solid yellow; */
@@ -60,7 +51,46 @@ header {
     margin-left: auto;
     padding: 10px;
 }
-
+.bio a {
+    text-decoration: none;
+    border: 1px solid black;
+    color: black;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 50%;
+}
+.main {
+    width: 60%;
+    height: 100%;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    position: absolute;
+    top: 55vh;
+    left: 20%;
+    right: 20%;
+}
+.main h2 { font-size: 18px; }
+.about {
+    background-color: #313036;
+    color: #abaaad;
+}
+.skills {
+    background-color: #abaaad;
+    color: #313036;
+}
+.projects {
+    background-color: #abaaad;
+    color: #313036;
+}
+.contact {
+    background-color: #313036;
+    color: #abaaad;
+}
+footer {
+    position: absolute;
+    bottom: 0;
+}
 
 
 
