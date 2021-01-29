@@ -36,14 +36,17 @@ header {
     right: 0%;
     top: 0%;
 }
-.info { 
-    /* border: 1px solid yellow; */
+.info {
     width: 60%;
     display: flex;
     position: absolute;
     left: 20%;
     top: 9vh;
  }
+span:after {
+    content:"\a";
+    white-space: pre;
+}
 .bio {
     display:flex;
     justify-content: space-around;
@@ -61,7 +64,7 @@ header {
 }
 .main {
     width: 60%;
-    height: 100%;
+    /* height: 100%; */
     border-radius: 10px;
     display: grid;
     grid-template-columns: 50% 50%;
@@ -86,7 +89,6 @@ header {
     background-color: #abaaad;
     color: #313036;
 }
-.skills section > i { border: 1px solid black; }
 .skills section {
     display: grid;
     grid-template-columns: 33.33% 33.33% 33.33%;
@@ -107,51 +109,4 @@ header {
 footer {
     position: absolute;
     bottom: 0;
-}
-
-
-
-
-/* RESPONSIVENESS */
-/* TO DO --- funset all the positions to see if the nav ahmburger will work */
-@media screen and (max-width: 768px){
-    .line {
-        width: 30px;
-        height: 3px;
-        background-color: white;
-        margin: 5px;
-    }
-    nav { position: relative; }
-    .hamburger {
-        position: absolute;
-        cursor: pointer;
-        right: 4%;
-        top: 12%;
-        z-index: 2;
-    }
-    /* TO DO --- fix width so that links are centered perferctly */
-    .nav-links {
-        position: fixed;
-        background-color: blue;
-        height: 100vh;
-        width: 100%;
-        flex-direction: column;
-        /* TO DO --- fix percentage so that animation perferct */
-        clip-path: circle(100px at 90% -10%);
-        -webkit-clip-path: circle(100px at 90% -10%);
-        transition: all 1s ease-out;
-        pointer-events: none;
-    }
-    .nav-links.open {
-        clip-path: circle(1000px at 90% -10%);
-        -webkit-clip-path: circle(1000px at 90% -10%);
-        pointer-events: all;
-    }
-    .nav-links links { opacity: 0; }
-    .nav-links li a { font-size: 25px; }
-    .nav-links li:nth-child(1){ transition: all 0.5s ease 0.2s; }
-    .nav-links li:nth-child(2){ transition: all 0.5s ease 0.4s; }
-    .nav-links li:nth-child(3){ transition: all 0.5s ease 0.6s; }
-    .nav-links li:nth-child(4) { transition: all 0.5s ease 0.8s; }
-    li.fade { opacity: 1; }
 }
