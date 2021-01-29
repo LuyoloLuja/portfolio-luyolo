@@ -40,7 +40,7 @@
     .nav-links {
         background-color: #313036;
         color: #abaaad;
-        height: 50vh;
+        height: 40vh;
         width: 100%;
         flex-direction: column;
         /* justify-content: initial; */
@@ -70,7 +70,7 @@
         display: initial;
         width: 100%;
         left: initial;
-        top: 50vh;
+        top: 40vh;
         /* height: 100%; */
     }
     .info img {
