@@ -40,7 +40,7 @@
     .nav-links {
         background-color: #313036;
         color: #abaaad;
-        height: 55vh;
+        height: 50vh;
         width: 100%;
         flex-direction: column;
         /* justify-content: initial; */
@@ -68,16 +68,23 @@
     li.fade { opacity: 1; }
     .info {
         display: initial;
-        position: initial;
-        height: 100%;
+        width: 100%;
+        left: initial;
+        top: 50vh;
+        /* height: 100%; */
     }
     .info img {
-        display: block;
-        margin: 0 auto;
+        /* display: block;
+        margin: 0 auto; */
+        display: none;
+    }
+    .info span:after {
+        content: "\a";
+        white-space: pre;
     }
     .bio .links {
         width: fit-content;
-        margin: 1em auto;
+        margin: 0 auto;
     }
     span:after {
         content: initial;
@@ -99,3 +106,8 @@
     .skills section { margin: 2em auto; }
     
 }
+/* @media screen and (max-width: 300px){
+    body {
+        background-color: red;
+    }
+} */
