@@ -71,11 +71,8 @@
         width: 100%;
         left: initial;
         top: 40vh;
-        /* height: 100%; */
     }
     .info img {
-        /* display: block;
-        margin: 0 auto; */
         display: none;
     }
     .info span:after {
@@ -106,8 +103,3 @@
     .skills section { margin: 2em auto; }
     
 }
-/* @media screen and (max-width: 300px){
-    body {
-        background-color: red;
-    }
-} */
