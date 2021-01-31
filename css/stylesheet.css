@@ -5,6 +5,9 @@ body {
     box-sizing: border-box;
 	font-family: "Montserrat","Helvetica Neue",Arial,sans-serif;
 }
+html {
+    scroll-behavior: smooth
+}
 .container { 
     position: relative;
     width: 100%;
@@ -104,6 +107,32 @@ span:after {
 .contact {
     background-color: #abaaad;
     color: #313036;
+}
+.contact-icons a {
+    font-weight: lighter;
+    text-decoration: none;
+    padding: 5px;
+    display: block;
+}
+.contact-icons a label {
+    font-family: "Montserrat","Helvetica Neue",Arial,sans-serif;
+    font-size: 14px;
+    margin-left: 10px;
+}
+.main button {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #abaaad;
+    color: #313036;
+    cursor: pointer;
+    padding: 20px;
+    border-radius: 50%;
+    display: none;
+    transition: all .3s;
 }
 footer {
     position: absolute;

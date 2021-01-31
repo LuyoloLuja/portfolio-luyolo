@@ -3,6 +3,26 @@ const navLinks = document.querySelector('.nav-links');
 const links = document.querySelectorAll('.nav-links li');
 const myImage = document.querySelector('.my-image');
 
+// got to top button
+const scrollUpBtn = document.querySelector(".scrollUpBtn");
+// call the scroll function on scroll
+window.onscroll = () => { scrollFunction() };
+// show button on 50px scroll
+function scrollFunction(){
+    if(document.body.scrollTop > 50 || document.documentElement.scrollTop > 50){
+        scrollUpBtn.style.display = "block";
+    }else {
+        scrollUpBtn.style.display = "none";
+    }
+}
+
+// page to go on top if button is clicked
+function topFunction(){
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+scrollUpBtn.addEventListener('click', topFunction);
+
 // adds animations
 function toggleAnimation() {
     navLinks.classList.toggle("open");
@@ -13,24 +33,11 @@ function toggleAnimation() {
 }
 
 // adds style for nav after hamburger is clicked
-function addStyleOnClick(){
-        
-        // navLinks.style.backgroundColor = "#5D5C6199";
-        // navLinks.style.color = "#313036";
-
-
-        // myImage.style.opacity = "0.5";
-        // if (hamburger === true) {
-        //     navLinks.style.backgroundColor = "white";
-        //     navLinks.style.opacity = "0.5";
-        // } else {
-        //     navLinks.parentNode.removeChild(navLinks);
-        // }
-}
+// function addStyleOnClick(){}
 
 hamburger.addEventListener("click", () => {
     toggleAnimation();
-    addStyleOnClick();
+    // addStyleOnClick();
 })
 
 // function removeImageInMobile(screenSize){

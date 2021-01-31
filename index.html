@@ -9,6 +9,7 @@
     <script src="https://kit.fontawesome.com/b2c6816f3b.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/stylesheet.css">
     <link rel="stylesheet" href="./css/mobile.css">
+    <link rel="stylesheet" href="./css/desktopAndTabs.css">
 </head>
 
 <body>
@@ -21,10 +22,10 @@
                     <div class="line"></div>
                 </div>
                 <ul class="nav-links">
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Skills</a></li>
-                    <li><a href="#">My Projects</a></li>
-                    <li><a href="#">Contact Me</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">My Projects</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
                 </ul>
             </nav>
 
@@ -37,7 +38,7 @@
                             this is my little corner on the internet.
                         </p>
                         <div class="links">
-                            <a i class="fa fa-envelope"
+                            <a class="fa fa-envelope"
                                 href="http://mail.google.com/mail/?view=cm&fs=1&tf=1&to=&su=luyolom19@gmail.com&su=Hello&shva=1"
                                 target="_blank"></a>
                             <a class="fa fa-linkedin"
@@ -51,7 +52,7 @@
 
         <section class="main">
             <article class="about">
-                <h2>About Me</h2>
+                <h2 id="about">About Me</h2>
 
                 <p>
                     An entry-level Full Stack Agile Web Developer with love of art, I am stickler for
@@ -83,13 +84,26 @@
                 </section>
             </article>
 
-            <article class="contact">
-                <h2>Contact Me</h2>
+            <article class="projects">
+                <h2 id="projects">My Projects</h2>
             </article>
 
-            <article class="projects">
-                <h2>My Projects</h2>
+            <article class="contact">
+                <h2 id="contact">Contact Me</h2>
+
+                <p>
+                    I'd like if you reached out to me, do not hesitate to say Hey!
+                    I'll get back to you ASAP!
+
+                <div class="contact-icons">
+                    <a class="fas fa-envelope" href="#"><label>luyolom19@gmail.com</label></a>
+                    <a class="fa fa-linkedin" href="https://www.linkedin.com/in/luyolo-mntuyedwa-48b593201/"><label>Luyolo Mntuyedwa</label></a>
+                    <a class="fa fa-github" href="https://github.com/LuyoloLuja" target="_blank"><label>LuyoloLuja</label></a>
+                </div>
+                </p>
             </article>
+
+        <button class="scrollUpBtn" title="Go To Top"><i class="fas fa-arrow-up"></i></button>
         </section>
 
         <!-- <footer>
