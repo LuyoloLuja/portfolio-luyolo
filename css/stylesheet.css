@@ -24,13 +24,14 @@ nav { height: 10vh; }
     margin-left: auto;
 }
 .nav-links a {
-    color: black;
+    color: #fff;
     text-decoration: none;
 }
 .nav-links a:hover { text-decoration: underline; }
 header {
     height: 65vh;
-    background-color: #5D5C61;
+    background-color: #086972;
+    color: #fff;
     margin: 15px;
     padding: 0;
     border-radius: 5px;
@@ -59,8 +60,8 @@ span:after {
 }
 .bio a {
     text-decoration: none;
-    border: 1px solid black;
-    color: black;
+    border: 1px solid #fff;
+    color: #fff;
     margin: 10px;
     padding: 10px;
     border-radius: 50%;
@@ -84,12 +85,12 @@ span:after {
 .main > article { padding: 20px; }
 .main h2 { font-size: 20px; }
 .about {
-    background-color: #313036;
-    color: #abaaad;
+    background-color: #17b978;
+    color: #086972;
 }
 .skills {
-    background-color: #abaaad;
-    color: #313036;
+    background-color: #a7ff83;
+    color: #086972;
 }
 .skills section {
     display: grid;
@@ -101,16 +102,17 @@ span:after {
     filter: grayscale(100%);
 }
 .projects {
-    background-color: #313036;
-    color: #abaaad;
+    background-color: #a7ff83;
+    color: #086972;
 }
 .contact {
-    background-color: #abaaad;
-    color: #313036;
+    background-color: #17b978;
+    color: #086972;
 }
 .contact-icons a {
     font-weight: lighter;
     text-decoration: none;
+    color: #3b5441;
     padding: 5px;
     display: block;
 }
@@ -126,8 +128,8 @@ span:after {
     z-index: 99;
     border: none;
     outline: none;
-    background-color: #abaaad;
-    color: #313036;
+    background-color: #086972;
+    color: #fff;
     cursor: pointer;
     padding: 20px;
     border-radius: 50%;

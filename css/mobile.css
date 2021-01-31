@@ -23,7 +23,7 @@
     .line {
         width: 30px;
         height: 3px;
-        background-color: #fff;
+        background-color: #086972;
         margin: 5px;
     }
     nav {
@@ -38,13 +38,11 @@
         z-index: 3;
     }
     .nav-links {
-        background-color: #313036;
-        color: #abaaad;
+        background-color: #17b978;
+        color: #086972;
         height: 40vh;
         width: 100%;
         flex-direction: column;
-        /* justify-content: initial; */
-        /* align-items: initial; */
         clip-path: circle(100px at 90% -10%);
         -webkit-clip-path: circle(100px at 90% -10%);
         transition: all 2s ease-out;
@@ -60,7 +58,7 @@
         font-weight: bold;
         padding: 5px;
      }
-    .nav-links li a { color: #abaaad; }
+    .nav-links li a { color: #086972; }
     .nav-links li:nth-child(1) { transition: all 0.5s ease 0.2s; }
     .nav-links li:nth-child(2) { transition: all 0.5s ease 0.4s }
     .nav-links li:nth-child(3) { transition: all 0.5s ease 0.6s }
@@ -99,6 +97,15 @@
         margin: 15px 0;
         font-size: 13px;
         line-height: 1.5em;
+    }
+
+    .projects {
+        background-color: #17b978;
+        color: #086972;
+    }
+    .contact {
+        background-color: #a7ff83;
+        color: #086972;
     }
     .skills section { margin: 2em auto; }
     
