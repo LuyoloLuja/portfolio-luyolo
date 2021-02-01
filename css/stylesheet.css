@@ -105,10 +105,15 @@ span:after {
     background-color: #a7ff83;
     color: #086972;
 }
+.projects img { max-width: 100%; }
 .projects > .project-one, .project-two, .project-three, .project-four {
     margin-top: 10px;
     background-color: #086972;
+    width: 100%;
     color: #a7ff83;
+}
+.projects .icon {
+    text-decoration: none;
 }
 .contact {
     background-color: #17b978;
