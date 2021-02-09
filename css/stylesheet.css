@@ -112,8 +112,18 @@ span:after {
     width: 100%;
     color: #a7ff83;
 }
+.projects .icon-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .projects .icon {
     text-decoration: none;
+    margin: 5px;
+    border: 1px solid #fff;
+    padding: 10px;
+    border-radius: 50%;
+    color: #fff;
 }
 .contact {
     background-color: #17b978;
