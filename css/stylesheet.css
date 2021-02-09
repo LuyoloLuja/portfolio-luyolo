@@ -24,14 +24,14 @@ nav { height: 10vh; }
     margin-left: auto;
 }
 .nav-links a {
-    color: #fff;
+    color: #EFFAFC;
     text-decoration: none;
 }
 .nav-links a:hover { text-decoration: underline; }
 header {
     height: 65vh;
-    background-color: #086972;
-    color: #fff;
+    background-color: #11232F;
+    color: #EFFAFC;
     margin: 15px;
     padding: 0;
     border-radius: 5px;
@@ -60,8 +60,8 @@ span:after {
 }
 .bio a {
     text-decoration: none;
-    border: 1px solid #fff;
-    color: #fff;
+    color: #EFFAFC;
+    background-color: #203546;
     margin: 10px;
     padding: 10px;
     border-radius: 50%;
@@ -85,12 +85,12 @@ span:after {
 .main > article { padding: 20px; }
 .main h2 { font-size: 20px; }
 .about {
-    background-color: #17b978;
-    color: #086972;
+    background-color: #203546;
+    color: #EFFAFC;
 }
 .skills {
-    background-color: #a7ff83;
-    color: #086972;
+    background-color: #4DA9DA;
+    color: #203546;
 }
 .skills section {
     display: grid;
@@ -102,15 +102,14 @@ span:after {
     filter: grayscale(100%);
 }
 .projects {
-    background-color: #a7ff83;
-    color: #086972;
+    background-color: #203546;
+    color: #fff;
+    border-top: 1px solid #fff;
 }
 .projects img { max-width: 100%; }
 .projects > .project-one, .project-two, .project-three, .project-four {
     margin-top: 10px;
-    background-color: #086972;
     width: 100%;
-    color: #a7ff83;
 }
 .projects .icon-div {
     display: flex;
@@ -126,13 +125,13 @@ span:after {
     color: #fff;
 }
 .contact {
-    background-color: #17b978;
-    color: #086972;
+    background-color: #4DA9DA;
+    color: #203546;
 }
 .contact-icons a {
     font-weight: lighter;
     text-decoration: none;
-    color: #3b5441;
+    color: #203546;
     padding: 5px;
     display: block;
 }
@@ -148,7 +147,7 @@ span:after {
     z-index: 99;
     border: none;
     outline: none;
-    background-color: #086972;
+    background-color: #203546;
     color: #fff;
     cursor: pointer;
     padding: 20px;
