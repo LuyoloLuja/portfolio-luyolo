@@ -2,8 +2,6 @@ const hamburger = document.querySelector('.hamburger');
 const navLinks = document.querySelector('.nav-links');
 const links = document.querySelectorAll('.nav-links li');
 const myImage = document.querySelector('.my-image');
-// const projects = document.querySelector(".projects");
-// const contact = document.querySelector(".contact");
 
 // got to top button
 const scrollUpBtn = document.querySelector(".scrollUpBtn");
@@ -34,23 +32,6 @@ function toggleAnimation() {
     })
 }
 
-// adds style for nav after hamburger is clicked
-// function addStyleOnClick(){}
-
 hamburger.addEventListener("click", () => {
     toggleAnimation();
-    // addStyleOnClick();
 })
-
-// function changeBgColors(screenSize){
-//     if(screenSize.matches){
-//         projects.style.backgroundColor = "#17b978";
-//         projects.style.color = "#086972";
-
-//         contact.style.backgroundColor = "#a7ff83";
-//         contact.style.color = "#086972";
-//     }
-// }
-// let screen = window.matchMedia("(max-width: 768px)");
-// changeBgColors(screen);
-// screen.addEventListener(changeBgColors);
