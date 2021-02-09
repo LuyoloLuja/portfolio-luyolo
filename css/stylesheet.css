@@ -119,7 +119,7 @@ span:after {
 .projects .icon {
     text-decoration: none;
     margin: 5px;
-    border: 1px solid #fff;
+    background-color: #11232F;
     padding: 10px;
     border-radius: 50%;
     color: #fff;
