@@ -135,6 +135,7 @@ span:after {
     padding: 5px;
     display: block;
 }
+li { font-size: 14px; }
 .contact-icons a label {
     font-family: "Montserrat","Helvetica Neue",Arial,sans-serif;
     font-size: 14px;
@@ -155,7 +156,12 @@ span:after {
     display: none;
     transition: all .3s;
 }
-footer {
-    position: absolute;
+/* footer {
+    position: fixed;
+    text-align: center;
     bottom: 0;
-}
+    z-index: 100;
+    background-color: red;
+    width: 100%;
+    margin: 100em 0 0 0;
+} */

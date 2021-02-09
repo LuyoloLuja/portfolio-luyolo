@@ -11,7 +11,7 @@ const scrollUpBtn = document.querySelector(".scrollUpBtn");
 window.onscroll = () => { scrollFunction() };
 // show button on 50px scroll
 function scrollFunction(){
-    if(document.body.scrollTop > 50 || document.documentElement.scrollTop > 50){
+    if(document.body.scrollTop > 200 || document.documentElement.scrollTop > 200){
         scrollUpBtn.style.display = "block";
     }else {
         scrollUpBtn.style.display = "none";
