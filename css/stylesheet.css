@@ -124,6 +124,13 @@ span:after {
     border-radius: 50%;
     color: #fff;
 }
+.projects .fa-arrow-right:hover:before {
+	font-family: "Montserrat","Helvetica Neue",Arial,sans-serif;
+    content: "See Live";
+    font-size: 12px;
+    border-radius: unset;
+    padding: 5px 20px;
+}
 .contact {
     background-color: #4DA9DA;
     color: #203546;
@@ -135,6 +142,7 @@ span:after {
     padding: 5px;
     display: block;
 }
+
 li { font-size: 14px; }
 .contact-icons a label {
     font-family: "Montserrat","Helvetica Neue",Arial,sans-serif;
