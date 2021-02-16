@@ -28,6 +28,7 @@
     }
     nav {
         position: relative;
+        z-index: 5;
     }
     .hamburger {
         position: absolute;
@@ -35,7 +36,7 @@
         top: 50%;
         transform: translate(-5%, -50%);
         cursor: pointer;
-        z-index: 1000;
+        z-index: 4;
     }
     .nav-links {
         background-color: #4DA9DA;
@@ -43,6 +44,9 @@
         height: 50vh;
         width: 100%;
         flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        padding-left: 20px;
         clip-path: circle(100px at 90% -10%);
         -webkit-clip-path: circle(100px at 90% -10%);
         transition: all 2s ease-out;
@@ -57,6 +61,8 @@
         opacity: 0;
         font-weight: bold;
         padding: 5px;
+        width: 90%;
+        /* border-bottom: 1px solid #203546; */
      }
     .nav-links li a { color: #203546; }
     .nav-links li:nth-child(1) { transition: all 0.5s ease 0.2s; }
