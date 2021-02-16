@@ -35,12 +35,12 @@
         top: 50%;
         transform: translate(-5%, -50%);
         cursor: pointer;
-        z-index: 3;
+        z-index: 1000;
     }
     .nav-links {
         background-color: #4DA9DA;
         color: #203546;
-        height: 40vh;
+        height: 50vh;
         width: 100%;
         flex-direction: column;
         clip-path: circle(100px at 90% -10%);
