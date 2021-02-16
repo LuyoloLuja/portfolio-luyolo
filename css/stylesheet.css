@@ -26,8 +26,24 @@ nav { height: 10vh; }
 .nav-links a {
     color: #EFFAFC;
     text-decoration: none;
+    position: relative;
 }
-.nav-links a:hover { text-decoration: underline; }
+.nav-links a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 1px;
+    width: 100%;
+    background-color: currentColor;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 250ms ease-in;
+}
+.nav-links a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left ;
+}
 header {
     height: 65vh;
     background-color: #11232F;
@@ -123,13 +139,6 @@ span:after {
     padding: 10px;
     border-radius: 50%;
     color: #fff;
-}
-.projects .fa-arrow-right:hover:before {
-	font-family: "Montserrat","Helvetica Neue",Arial,sans-serif;
-    content: "See Live";
-    font-size: 12px;
-    border-radius: unset;
-    padding: 5px 20px;
 }
 .contact {
     background-color: #4DA9DA;

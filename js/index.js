@@ -2,9 +2,8 @@ const hamburger = document.querySelector('.hamburger');
 const navLinks = document.querySelector('.nav-links');
 const links = document.querySelectorAll('.nav-links li');
 const myImage = document.querySelector('.my-image');
-
-// got to top button
 const scrollUpBtn = document.querySelector(".scrollUpBtn");
+
 // call the scroll function on scroll
 window.onscroll = () => { scrollFunction() };
 // show button on 50px scroll
