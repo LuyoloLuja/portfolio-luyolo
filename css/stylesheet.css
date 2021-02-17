@@ -246,6 +246,8 @@ li { font-size: 14px; font-weight: bolder; }
     z-index: 99;
     border: none;
     outline: none;
+    box-shadow: 0 0 10px #000;
+    -webkit-box-shadow: 0 0 10px #fff;
     background-color: #203546;
     color: #fff;
     cursor: pointer;
