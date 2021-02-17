@@ -85,7 +85,7 @@
     }
     .bio .links {
         width: fit-content;
-        margin: 0 auto;
+        margin: 2em auto;
     }
     span:after {
         content: initial;
@@ -113,6 +113,9 @@
         background-color: #4DA9DA;
         color: #203546;
     }
+
+    .contact form { width: 90%; }
+    
     .skills section { margin: 2em auto; }
     
 }

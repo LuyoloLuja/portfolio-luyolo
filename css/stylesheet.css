@@ -74,16 +74,25 @@ span:after {
     margin-left: auto;
     padding: 10px;
 }
-.bio a {
+.bio .links {
+    display: flex;
+    padding: 10px;
+}
+.bio .links a {
     text-decoration: none;
     color: #EFFAFC;
     background-color: #203546;
-    margin: 10px;
-    padding: 10px;
+    width: 2em;
+    height: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 2em;
     border-radius: 50%;
 }
 .main {
     width: 60%;
+    height: fit-content;
     border-radius: 10px;
     display: grid;
     grid-template-columns: 50% 50%;
@@ -129,16 +138,21 @@ span:after {
 }
 .projects .icon-div {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    margin-bottom: 3em;
 }
 .projects .icon {
     text-decoration: none;
-    margin: 5px;
     background-color: #11232F;
-    padding: 10px;
-    border-radius: 50%;
     color: #fff;
+    width: 2em;
+    height: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 2em;
+    border-radius: 50%;
 }
 .contact {
     background-color: #4DA9DA;
@@ -171,6 +185,7 @@ span:after {
 }
 .contact form .form-group textarea { resize: none; }
 .contact form button {
+    outline: none;
     cursor: pointer;
     width: 70%;
     display: block;
@@ -198,12 +213,10 @@ span:after {
     font-weight: bolder;
 }
 .contact form #status.success {
-    border: 1px solid green;
     color: green;
     animation: status 4s ease forwards;
 }
 .contact form #status.error {
-    border: 1px solid red;
     color: red;
     animation: status 4s ease forwards;
 }
@@ -241,12 +254,11 @@ li { font-size: 14px; font-weight: bolder; }
     display: none;
     transition: all .3s;
 }
-/* footer {
-    position: fixed;
+footer {
+    color: #203546;
+    position: relative;
     text-align: center;
     bottom: 0;
-    z-index: 100;
-    background-color: red;
     width: 100%;
-    margin: 100em 0 0 0;
-} */
+    grid-column: 1 / -1;
+}
