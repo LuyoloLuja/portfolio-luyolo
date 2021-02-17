@@ -131,7 +131,7 @@ span:after {
     color: #fff;
     border-top: 1px solid #fff;
 }
-.projects img { max-width: 100%; }
+.projects img { max-width: 100%; filter: grayscale(60%); }
 .projects > .project-one, .project-two, .project-three, .project-four {
     margin-top: 10px;
     width: 100%;
@@ -161,7 +161,7 @@ span:after {
 .contact form {
     background-color: #203546;
     border-radius: 10px;
-    width: 60%;
+    width: 80%;
     color: #EFFAFC;
     margin: 2em auto;
     padding: 2em;

@@ -114,7 +114,11 @@
         color: #203546;
     }
 
-    .contact form { width: 90%; }
+    .contact form { width: 100%; }
+
+    .main .scrollUpBtn {
+        -webkit-box-shadow: 0 0 10px #fff;
+    }
     
     .skills section { margin: 2em auto; }
     
