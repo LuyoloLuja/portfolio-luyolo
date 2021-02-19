@@ -94,6 +94,7 @@ span:after {
     width: 60%;
     height: fit-content;
     border-radius: 10px;
+    overflow: hidden;
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: max-content;
@@ -203,8 +204,8 @@ span:after {
     font-size: 18px;
 }
 .contact form button:hover {
-    background: linear-gradient(100deg, #203546 0%, #36454f 25%);
-    color: #EFFAFC;
+    box-shadow: 0 0 5px #EFFAFC;
+    -webkit-box-shadow: 0 0 5px #EFFAFC;
 }
 .contact form #status {
     width: 100%;
