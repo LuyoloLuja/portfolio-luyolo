@@ -178,12 +178,18 @@ span:after {
     outline: none;
     border-bottom: 1.5px solid #fff;
     background-color: #203546;
+    color: #fff;
     width: 100%;
     padding: 5px;
     font-size: 12px;
     display: block;
 }
-.contact form .form-group textarea { resize: none; }
+.contact form .form-group textarea {
+    resize: none;
+    border-radius: 8px;
+    border:1px solid whitesmoke;
+    margin-top: 1em;
+}
 .contact form button {
     outline: none;
     cursor: pointer;
@@ -204,7 +210,6 @@ span:after {
 }
 .contact form #status {
     width: 100%;
-    /* border: 1px solid white; */
     margin: 5px auto;
     padding: 5px;
     font-size: 12px;
@@ -219,6 +224,30 @@ span:after {
 .contact form #status.error {
     color: red;
     animation: status 4s ease forwards;
+}
+.firstNameErrorMsg {
+    color: red;
+    font-weight: lighter;
+    font-size: 10px;
+    display: none;
+}
+.lastNameErrorMsg {
+    color: red;
+    font-weight: lighter;
+    font-size: 10px;
+    display: none;
+}
+.emailErrorMsg {
+    color: red;
+    font-weight: lighter;
+    font-size: 10px;
+    display: none;
+}
+.messageError {
+    color: red;
+    font-weight: lighter;
+    font-size: 10px;
+    display: none;
 }
 @keyframes status {
     0% { opacity: 1; pointer-events: all; }
