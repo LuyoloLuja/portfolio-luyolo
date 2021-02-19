@@ -152,24 +152,28 @@
                 </p>
 
                 <form id="my-form" action="https://formspree.io/f/mnqoyzgr" method="POST">
-                    <h3>Contact me via Email</h3>
+                    <h2>Email Me</h2>
                     <div class="form-group">
                         <label for="firstName">First Name</label>
+                        <div class="firstNameErrorMsg">Please fill in your first name!</div>
                         <input required type="text" id="firstName" name="firstName">
                     </div>
 
                     <div class="form-group">
                         <label for="lastName">Last Name</label>
+                        <div class="lastNameErrorMsg">Please fill in your last name!</div>
                         <input required type="text" id="lastName" name="lastName">
                     </div>
 
                     <div class="form-group">
                         <label for="email">Email</label>
+                        <div class="emailErrorMsg">Please fill in your email!</div>
                         <input required type="text" id="email" name="email">
                     </div>
 
                     <div class="form-group">
                         <label for="message">Message</label>
+                        <div class="messageError">Please write your message here!</div>
                         <textarea required name="message" id="message" cols="30" rows="10"></textarea>
                     </div>
 
