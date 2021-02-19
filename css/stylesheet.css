@@ -46,7 +46,7 @@ nav { height: 10vh; }
 }
 header {
     height: 65vh;
-    background-color: #11232F;
+    background-color: #36454f;
     color: #EFFAFC;
     margin: 15px;
     padding: 0;
@@ -114,8 +114,8 @@ span:after {
     color: #EFFAFC;
 }
 .skills {
-    background-color: #4DA9DA;
-    color: #203546;
+    background-color: #203546;
+    color: #EFFAFC;
 }
 .skills section {
     display: grid;
@@ -128,8 +128,8 @@ span:after {
 }
 .projects {
     background-color: #203546;
-    color: #fff;
-    border-top: 1px solid #fff;
+    color: #EFFAFC;
+    /* border-top: 1px solid #EFFAFC; */
 }
 .projects img { max-width: 100%; filter: grayscale(60%); }
 .projects > .project-one, .project-two, .project-three, .project-four {
@@ -145,7 +145,7 @@ span:after {
 .projects .icon {
     text-decoration: none;
     background-color: #11232F;
-    color: #fff;
+    color: #EFFAFC;
     width: 2em;
     height: 2em;
     display: flex;
@@ -155,8 +155,8 @@ span:after {
     border-radius: 50%;
 }
 .contact {
-    background-color: #4DA9DA;
-    color: #203546;
+    background-color: #203546;
+    color: #EFFAFC;
 }
 .contact form {
     background-color: #203546;
@@ -176,9 +176,9 @@ span:after {
 .contact form .form-group textarea {
     border: none;
     outline: none;
-    border-bottom: 1.5px solid #fff;
+    border-bottom: 1.5px solid #EFFAFC;
     background-color: #203546;
-    color: #fff;
+    color: #EFFAFC;
     width: 100%;
     padding: 5px;
     font-size: 12px;
@@ -272,9 +272,9 @@ li { font-size: 14px; font-weight: bolder; }
     border: none;
     outline: none;
     box-shadow: 0 0 10px #000;
-    -webkit-box-shadow: 0 0 10px #fff;
+    -webkit-box-shadow: 0 0 10px #EFFAFC;
     background-color: #203546;
-    color: #fff;
+    color: #EFFAFC;
     cursor: pointer;
     padding: 20px;
     border-radius: 50%;

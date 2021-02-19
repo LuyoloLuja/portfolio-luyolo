@@ -23,7 +23,7 @@
     .line {
         width: 30px;
         height: 3px;
-        background-color: #203546;
+        background-color: #EFFAFC;
         margin: 5px;
     }
     nav {
@@ -39,8 +39,8 @@
         z-index: 4;
     }
     .nav-links {
-        background-color: #4DA9DA;
-        color: #203546;
+        background-color: #203546;
+        color: #EFFAFC;
         height: 50vh;
         width: 100%;
         flex-direction: column;
@@ -64,7 +64,7 @@
         width: 90%;
         /* border-bottom: 1px solid #203546; */
      }
-    .nav-links li a { color: #203546; }
+    .nav-links li a { color: #EFFAFC; }
     .nav-links li:nth-child(1) { transition: all 0.5s ease 0.2s; }
     .nav-links li:nth-child(2) { transition: all 0.5s ease 0.4s }
     .nav-links li:nth-child(3) { transition: all 0.5s ease 0.6s }
@@ -105,14 +105,14 @@
         line-height: 1.5em;
     }
 
-    .projects {
+    /* .projects {
         background-color: #203546;
         color: #fff;
     }
     .contact {
         background-color: #4DA9DA;
         color: #203546;
-    }
+    } */
 
     .contact form { 
         width: 100%;
