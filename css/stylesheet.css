@@ -227,25 +227,21 @@ span:after {
 }
 .firstNameErrorMsg {
     color: red;
-    font-weight: lighter;
     font-size: 10px;
     display: none;
 }
 .lastNameErrorMsg {
     color: red;
-    font-weight: lighter;
     font-size: 10px;
     display: none;
 }
 .emailErrorMsg {
     color: red;
-    font-weight: lighter;
     font-size: 10px;
     display: none;
 }
 .messageError {
     color: red;
-    font-weight: lighter;
     font-size: 10px;
     display: none;
 }
