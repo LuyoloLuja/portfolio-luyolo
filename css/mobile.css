@@ -130,5 +130,6 @@
     }
     
     .skills section { margin: 2em auto; }
+    .skills section img { width: 50px; }
     
 }

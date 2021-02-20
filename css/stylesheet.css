@@ -134,9 +134,10 @@ span:after {
 }
 .projects img { 
     display: block;
+    max-width: 100%;
     filter: grayscale(60%);
     margin: auto;
- }
+}
 .projects > .project-one, .project-two, .project-three, .project-four {
     margin-top: 10px;
     text-align: center;
