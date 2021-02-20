@@ -132,9 +132,14 @@ span:after {
     color: #EFFAFC;
     /* border-top: 1px solid #EFFAFC; */
 }
-.projects img { max-width: 100%; filter: grayscale(60%); }
+.projects img { 
+    display: block;
+    filter: grayscale(60%);
+    margin: auto;
+ }
 .projects > .project-one, .project-two, .project-three, .project-four {
     margin-top: 10px;
+    text-align: center;
     width: 100%;
 }
 .projects .icon-div {
