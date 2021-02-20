@@ -297,3 +297,28 @@ footer {
     width: 100%;
     grid-column: 1 / -1;
 }
+
+.pop-up-container {
+    background-color: #00000099;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 100;
+    display: none;
+}
+.pop-up {
+    background-color: #EFFAFC;
+    color: #203546;
+    width: 25%;
+    height: 80vh;
+    margin: 10vh auto;
+    border-radius: 10px;
+}
+.pop-up .close-btn {
+    text-align: right;
+    font-size: 26px;
+    font-weight: bold;
+    margin: 10px;
+}
+.close-btn span { cursor: pointer; }
+.close-btn span:hover { opacity: 0.8; }

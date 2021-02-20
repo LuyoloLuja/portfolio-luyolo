@@ -31,6 +31,44 @@
 </head>
 
 <body>
+    <div class="pop-up-container">
+        <div class="pop-up">
+            <div class="close-btn">
+                <span class="close">&times;</span>
+            </div>
+
+            <form id="my-form" action="https://formspree.io/f/mnqoyzgr" method="POST">
+                
+                <div class="form-group">
+                    <label for="firstName">First Name</label>
+                    <div class="firstNameErrorMsg">Please fill in your first name!</div>
+                    <input required type="text" id="firstName" name="firstName">
+                </div>
+
+                <div class="form-group">
+                    <label for="lastName">Last Name</label>
+                    <div class="lastNameErrorMsg">Please fill in your last name!</div>
+                    <input required type="text" id="lastName" name="lastName">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <div class="emailErrorMsg">Please fill in your email!</div>
+                    <input required type="text" id="email" name="email">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <div class="messageError">Please write your message here!</div>
+                    <textarea required name="message" id="message" cols="30" rows="10"></textarea>
+                </div>
+
+                <button class="formBtn" type="submit">Submit</button>
+                <div id="status"></div>
+            </form>
+        </div>
+    </div>
+
     <section class="container">
         <header>
             <nav>
@@ -57,6 +95,7 @@
                             this is my little corner on the internet.
                         </p>
                         <div class="links">
+                            <a href="#" class="far fa-envelope emailPopup"></a>
                             <a class="fa fa-facebook" href="http://www.facebook.com/luyololuja.mntuyedwa"
                                 target="_blank"></a>
                             <a class="fa fa-linkedin"
@@ -210,6 +249,8 @@
             </footer>
         </section>
     </section>
+
+
     <script src="./js/index.js"></script>
 </body>
 

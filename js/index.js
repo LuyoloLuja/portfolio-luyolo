@@ -12,6 +12,26 @@ const firstNameErrorMsg = document.querySelector('.firstNameErrorMsg');
 const lastNameErrorMsg = document.querySelector('.lastNameErrorMsg');
 const emailErrorMsg = document.querySelector('.emailErrorMsg');
 const messageError = document.querySelector('.messageError');
+const popupContainer = document.querySelector('.pop-up-container');
+const emailPopupButton = document.querySelector('.emailPopup');
+const closeBtn = document.querySelector('.close');
+
+function popupFunctionality() {
+  emailPopupButton.addEventListener('click', () => {
+    popupContainer.style.display = 'block';
+  })
+
+  closeBtn.addEventListener('click', () => {
+    popupContainer.style.display = 'none';
+  })
+
+  window.addEventListener('click', (clicking) => {
+    if (clicking.target === popupContainer) {
+      popupContainer.style.display = 'none';
+    }
+  })
+}
+popupFunctionality();
 
 // call the scroll function on scroll
 window.onscroll = () => { scrollFunction() };
