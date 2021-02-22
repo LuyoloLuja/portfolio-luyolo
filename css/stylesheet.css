@@ -299,7 +299,7 @@ footer {
 }
 
 .pop-up-container {
-    background-color: #00000099;
+    background-color: rgba(0,0,0,0.4);
     width: 100%;
     height: 100vh;
     position: fixed;
@@ -308,7 +308,7 @@ footer {
 }
 .pop-up {
     background-color: #EFFAFC;
-    color: #203546;
+    color: #36454f;
     width: 25%;
     height: 80vh;
     margin: 10vh auto;
@@ -320,5 +320,72 @@ footer {
     font-weight: bold;
     margin: 10px;
 }
-.close-btn span { cursor: pointer; }
-.close-btn span:hover { opacity: 0.8; }
+.close-btn span { 
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+ }
+.close-btn span:hover { color: #203546; }
+
+.pop-up form {
+    width: 70%;
+    /* height: inherit; */
+    margin: 0 auto;
+}
+.pop-up form .form-group {
+    width: 100%;
+    font-size: 14px;
+    margin: 1.5em auto 0 auto;
+}
+.pop-up form .form-group input,
+.contact form .form-group textarea {
+    border: none;
+    outline: none;
+    border-bottom: 1.5px solid #203546;
+    color: #203546;
+    width: 100%;
+    padding: 5px 0;
+    font-size: 12px;
+    display: block;
+}
+.pop-up form .form-group textarea {
+    resize: none;
+    width: 100%;
+    border-radius: 5px;
+    border: 1.5px solid 203546;
+    outline: none;
+    padding: 5px;
+    margin-top: 1em;
+}
+.pop-up form button {
+    outline: none;
+    cursor: pointer;
+    width: 60%;
+    margin: 5px auto;
+    padding: 10px 0;
+    display: block;
+    background-color: #203546;
+    border: none;
+    border-radius: 20px;
+    color: #EFFAFC;
+    font-size: 16px;
+}
+.pop-up form button:hover {
+    box-shadow: 0 0 5px #000;
+    -webkit-box-shadow: 0 0 5px #000;
+}
+.pop-up form #status {
+    width: 100%;
+    margin: 5px auto;
+    padding: 5px;
+    font-size: 12px;
+    border-radius: 15px;
+    text-align: center;
+}
+.pop-up form #status.success {
+    color: green;
+    animation: status 4s ease forwards;
+}
+.pop-up form #status.error {
+    color: red;
+    animation: status 4s ease forwards;
+}
