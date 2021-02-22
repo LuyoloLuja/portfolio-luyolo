@@ -337,7 +337,7 @@ footer {
     margin: 1.5em auto 0 auto;
 }
 .pop-up form .form-group input,
-.contact form .form-group textarea {
+.pop-up form .form-group textarea {
     border: none;
     outline: none;
     border-bottom: 1.5px solid #203546;
@@ -351,7 +351,7 @@ footer {
     resize: none;
     width: 100%;
     border-radius: 5px;
-    border: 1.5px solid 203546;
+    border: 1.5px solid #203546;
     outline: none;
     padding: 5px;
     margin-top: 1em;
