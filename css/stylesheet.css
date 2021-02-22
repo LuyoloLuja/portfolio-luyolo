@@ -108,7 +108,7 @@ span:after {
     font-weight: bold;
     line-height: 1.3em;
  }
-.main > article { padding: 20px; }
+.main > article { padding: 50px; }
 .main h2 { font-size: 20px; }
 .about {
     background-color: #203546;

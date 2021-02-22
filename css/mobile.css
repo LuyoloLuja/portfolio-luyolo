@@ -99,6 +99,7 @@
         left: 5%;
         right: 5%;
     }
+    .main > article { padding: 20px; }
     .main p {
         margin: 15px 0;
         font-size: 13px;
