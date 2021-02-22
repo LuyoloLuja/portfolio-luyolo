@@ -14,11 +14,17 @@ const emailErrorMsg = document.querySelector('.emailErrorMsg');
 const messageError = document.querySelector('.messageError');
 const popupContainer = document.querySelector('.pop-up-container');
 const emailPopupButton = document.querySelector('.emailPopup');
+const popupInfo = document.querySelector('.pop-up');
 const closeBtn = document.querySelector('.close');
 
 function popupFunctionality() {
   emailPopupButton.addEventListener('click', () => {
     popupContainer.style.display = 'block';
+
+    popupContainer.classList.add('animate__animated', 'animate__bounceInLeft');
+    popupInfo.classList.add('animate__animated', 'animate__bounceInRight');
+
+    preventDefault();
   })
 
   closeBtn.addEventListener('click', () => {
