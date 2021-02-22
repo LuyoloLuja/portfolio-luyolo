@@ -197,7 +197,7 @@ span:after {
 .contact form .form-group textarea {
     resize: none;
     border-radius: 8px;
-    border:1px solid whitesmoke;
+    border:1px solid #EFFAFC;
     margin-top: 1em;
 }
 .contact form button {
