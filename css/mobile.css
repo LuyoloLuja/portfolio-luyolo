@@ -87,7 +87,7 @@
         top: 20vh;
         /* text-align: center; */
     }
-    .info img { 
+    .info .mobileImg { 
         border-radius: 50%;
         display: block;
         margin: 0 auto;

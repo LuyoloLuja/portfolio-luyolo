@@ -65,6 +65,7 @@ nav .hideOnDesktop { display: none; }
     left: 20%;
     top: 9vh;
  }
+.info .mobileImg { display: none; }
 span:after {
     content:"\a";
     white-space: pre;
