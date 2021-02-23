@@ -56,6 +56,8 @@ header {
     right: 0%;
     top: 0%;
 }
+nav ul img { display: none; }
+nav .hideOnDesktop { display: none; }
 .info {
     width: 60%;
     display: flex;
