@@ -325,7 +325,7 @@ footer {
     background-color: #EFFAFC;
     color: #36454f;
     width: 25%;
-    height: 80vh;
+    /* height: 80vh; */
     margin: 10vh auto;
     border-radius: 10px;
 }
