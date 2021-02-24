@@ -45,7 +45,7 @@ window.onscroll = () => { scrollFunction() };
 function scrollFunction() {
   if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
     scrollUpBtn.style.display = "block";
-  } else {
+  }else {
     scrollUpBtn.style.display = "none";
   }
 }
