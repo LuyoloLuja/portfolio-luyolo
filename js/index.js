@@ -86,18 +86,10 @@ function addColorsOnErrors() {
   })
 
 }
+
 formBtn.forEach(formButton => {
   formButton.addEventListener('click', addColorsOnErrors);
 })
-
-document.addEventListener('invalid', (function () {
-  return function (e) {
-    e.preventDefault();
-    inputElements.forEach(element => { 
-      element.focus();
-     })
-  }
-})(), true);
 
 // the form spree API
 window.addEventListener("DOMContentLoaded", function () {

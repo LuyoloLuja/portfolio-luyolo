@@ -239,11 +239,11 @@ span:after {
     text-align: center;
     font-weight: bolder;
 }
-.contact form #status.success {
+.contact form .status.success {
     color: green;
     animation: status 4s ease forwards;
 }
-.contact form #status.error {
+.contact form .status.error {
     color: red;
     animation: status 4s ease forwards;
 }
