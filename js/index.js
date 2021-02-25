@@ -3,31 +3,25 @@ const navLinks = document.querySelector('.nav-links');
 const links = document.querySelectorAll('.nav-links li');
 const myImage = document.querySelector('.my-image');
 const scrollUpBtn = document.querySelector(".scrollUpBtn");
-// const firstName = document.getElementById('firstName');
-// const lastName = document.getElementById('lastName');
-// const email = document.getElementById('email');
+
 const message = document.getElementById('message');
-const formBtn = document.querySelector(".formBtn");
+const formBtn = document.querySelectorAll(".formBtn");
 const inputElements = document.querySelectorAll('.inputElement');
 const errorMessage = document.querySelectorAll('.errorMessage');
 
-const firstNameErrorMsg = document.querySelector('.firstNameErrorMsg');
-const lastNameErrorMsg = document.querySelector('.lastNameErrorMsg');
-const emailErrorMsg = document.querySelector('.emailErrorMsg');
-const messageError = document.querySelector('.messageError');
 const popupContainer = document.querySelector('.pop-up-container');
 const emailPopupButton = document.querySelector('.emailPopup');
 const popupInfo = document.querySelector('.pop-up');
 const closeBtn = document.querySelector('.close');
 
 function popupFunctionality() {
-  emailPopupButton.addEventListener('click', () => {
+  emailPopupButton.addEventListener('click', (e) => {
     popupContainer.style.display = 'block';
 
     popupContainer.classList.add('animate__animated', 'animate__bounceInLeft');
     popupInfo.classList.add('animate__animated', 'animate__bounceInRight');
 
-    // preventDefault();
+    e.preventDefault();
   })
 
   closeBtn.addEventListener('click', () => {
@@ -73,41 +67,6 @@ hamburger.addEventListener("click", () => {
   toggleAnimation();
 })
 
-function preventErrorsFromBeingActive() {
-
-  // inputElements.forEach((inputElement, errorElement) => {
-  //   let error = errorMessage[errorElement];
-
-  //   inputElement.style.borderBottomColor = "#fff";
-  //   error.style.display = "none";
-
-  // })
-  setTimeout(() => {
-    addColorsOnErrors()
-  }, 3000);
-
-  // firstName.addEventListener('click', () => {
-  //   firstName.style.borderBottomColor = "white";
-  //   firstNameErrorMsg.style.display = "none";
-  // })
-
-  // lastName.addEventListener('click', () => {
-  //   lastName.style.borderBottomColor = "white";
-  //   lastNameErrorMsg.style.display = "none";
-  // })
-
-  // email.addEventListener('click', () => {
-  //   email.style.borderBottomColor = "white";
-  //   emailErrorMsg.style.display = "none";
-  // })
-
-  // message.addEventListener('click', () => {
-  //   message.style.borderBottomColor = "white";
-  //   messageError.style.display = "none";
-  // })
-
-}
-
 function addColorsOnErrors() {
 
   inputElements.forEach((inputElement, errorElement) => {
@@ -116,6 +75,7 @@ function addColorsOnErrors() {
     if (inputElement.value === "") {
       error.textContent = "Please fill in this field!";
       error.classList.add('errorStyle');
+      error.classList.add('animate__animated', 'animate__flash');
       inputElement.style.borderBottomColor = "red";
 
       setTimeout(() => {
@@ -125,10 +85,11 @@ function addColorsOnErrors() {
     }
   })
 
-
-  preventErrorsFromBeingActive();
 }
-formBtn.addEventListener('click', addColorsOnErrors);
+
+formBtn.forEach(formButton => {
+  formButton.addEventListener('click', addColorsOnErrors);
+})
 
 // the form spree API
 window.addEventListener("DOMContentLoaded", function () {
