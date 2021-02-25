@@ -3,11 +3,14 @@ const navLinks = document.querySelector('.nav-links');
 const links = document.querySelectorAll('.nav-links li');
 const myImage = document.querySelector('.my-image');
 const scrollUpBtn = document.querySelector(".scrollUpBtn");
-const firstName = document.getElementById('firstName');
-const lastName = document.getElementById('lastName');
-const email = document.getElementById('email');
+// const firstName = document.getElementById('firstName');
+// const lastName = document.getElementById('lastName');
+// const email = document.getElementById('email');
 const message = document.getElementById('message');
 const formBtn = document.querySelector(".formBtn");
+const inputElements = document.querySelectorAll('.inputElement');
+const errorMessage = document.querySelectorAll('.errorMessage');
+
 const firstNameErrorMsg = document.querySelector('.firstNameErrorMsg');
 const lastNameErrorMsg = document.querySelector('.lastNameErrorMsg');
 const emailErrorMsg = document.querySelector('.emailErrorMsg');
@@ -24,7 +27,7 @@ function popupFunctionality() {
     popupContainer.classList.add('animate__animated', 'animate__bounceInLeft');
     popupInfo.classList.add('animate__animated', 'animate__bounceInRight');
 
-    preventDefault();
+    // preventDefault();
   })
 
   closeBtn.addEventListener('click', () => {
@@ -45,7 +48,7 @@ window.onscroll = () => { scrollFunction() };
 function scrollFunction() {
   if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
     scrollUpBtn.style.display = "block";
-  }else {
+  } else {
     scrollUpBtn.style.display = "none";
   }
 }
@@ -72,46 +75,56 @@ hamburger.addEventListener("click", () => {
 
 function preventErrorsFromBeingActive() {
 
-  firstName.addEventListener('click', () => {
-    firstName.style.borderBottomColor = "white";
-    firstNameErrorMsg.style.display = "none";
-  })
+  // inputElements.forEach((inputElement, errorElement) => {
+  //   let error = errorMessage[errorElement];
 
-  lastName.addEventListener('click', () => {
-    lastName.style.borderBottomColor = "white";
-    lastNameErrorMsg.style.display = "none";
-  })
+  //   inputElement.style.borderBottomColor = "#fff";
+  //   error.style.display = "none";
 
-  email.addEventListener('click', () => {
-    email.style.borderBottomColor = "white";
-    emailErrorMsg.style.display = "none";
-  })
+  // })
+  setTimeout(() => {
+    addColorsOnErrors()
+  }, 3000);
 
-  message.addEventListener('click', () => {
-    message.style.borderBottomColor = "white";
-    messageError.style.display = "none";
-  })
+  // firstName.addEventListener('click', () => {
+  //   firstName.style.borderBottomColor = "white";
+  //   firstNameErrorMsg.style.display = "none";
+  // })
+
+  // lastName.addEventListener('click', () => {
+  //   lastName.style.borderBottomColor = "white";
+  //   lastNameErrorMsg.style.display = "none";
+  // })
+
+  // email.addEventListener('click', () => {
+  //   email.style.borderBottomColor = "white";
+  //   emailErrorMsg.style.display = "none";
+  // })
+
+  // message.addEventListener('click', () => {
+  //   message.style.borderBottomColor = "white";
+  //   messageError.style.display = "none";
+  // })
 
 }
 
 function addColorsOnErrors() {
 
-  if (firstName.value === "") {
-    firstNameErrorMsg.style.display = "block";
-    firstName.style.borderBottomColor = "red";
-  }
-  if (lastName.value === "") {
-    lastNameErrorMsg.style.display = "block";
-    lastName.style.borderBottomColor = "red";
-  }
-  if (email.value === "") {
-    emailErrorMsg.style.display = "block";
-    email.style.borderBottomColor = "red";
-  }
-  if (message.value === "") {
-    messageError.style.display = "block";
-    message.style.borderColor = "red";
-  }
+  inputElements.forEach((inputElement, errorElement) => {
+    let error = errorMessage[errorElement];
+
+    if (inputElement.value === "") {
+      error.textContent = "Please fill in this field!";
+      error.classList.add('errorStyle');
+      inputElement.style.borderBottomColor = "red";
+
+      setTimeout(() => {
+        error.textContent = "";
+        inputElement.style.borderBottomColor = "white";
+      }, 5000);
+    }
+  })
+
 
   preventErrorsFromBeingActive();
 }

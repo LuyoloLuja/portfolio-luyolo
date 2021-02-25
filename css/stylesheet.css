@@ -247,25 +247,12 @@ span:after {
     color: red;
     animation: status 4s ease forwards;
 }
-.firstNameErrorMsg {
+.errorStyle {
     color: red;
     font-size: 10px;
-    display: none;
 }
-.lastNameErrorMsg {
-    color: red;
-    font-size: 10px;
-    display: none;
-}
-.emailErrorMsg {
-    color: red;
-    font-size: 10px;
-    display: none;
-}
-.messageError {
-    color: red;
-    font-size: 10px;
-    display: none;
+.redBorder {
+    border: 1px solid red;
 }
 @keyframes status {
     0% { opacity: 1; pointer-events: all; }
